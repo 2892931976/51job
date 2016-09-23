@@ -6,4 +6,5 @@ data/img/*.jpg
 data/*.html
 *.exe
 web/web
+.idea/*
 
