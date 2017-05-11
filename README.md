@@ -1,4 +1,5 @@
-#此项目已经弃用,因为51改版了,参数变了,需要调参数....
+# 此项目已经弃用,因为51改版了,参数变了,需要调参数....
+
 # 项目名:pikapika
 
 ```
@@ -96,7 +97,7 @@
 	go build webserver.go
 	./webserver
  
- 配置账户密码51job/pika/args.go
+ 配置51job账户密码51job/pika/args.go
 
 	var companyname=""
 	var userName = ""
