@@ -1,5 +1,30 @@
 # 此项目已经弃用,因为51改版了,参数变了,需要调参数....
 
+第一份工作试用期间为HR写的。
+
+只有Web端还可以跑，网站改版了，爬虫端起不来。将data压缩包解压在51job目录下，data文件夹就是放简历头像的，并将sql导入数据库，
+
+配置文件在51job/web/conf/app.conf
+	
+	httpaddr = "127.0.0.1" //地址
+	httpport = 8088         //端口
+	mysqluser = "root"
+	mysqlpass = "45454"
+	mysqlurls = "127.0.0.1"
+	mysqlport = 3306
+	mysqldb   = "51job"
+	pikapika="127.0.0.1:8099" //爬虫控制台地址
+	
+然后
+
+```
+cd web
+go build main.go
+./main
+```
+
+打开浏览器，访问http://127.0.0.1:8088
+
 # 项目名:pikapika
 
 ```
@@ -120,7 +145,7 @@
 默认爬虫日志不保存在本地，如果需要保存在本地，请打开51job/log/log.go
 
 	// 保存爬虫日志到本地？
-	var openlog = false
+	var openlog = false/dd
 
 ## 开启网站服务
  7.开启小蜜蜂，安装bee工具
